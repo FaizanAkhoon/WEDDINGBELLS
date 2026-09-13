@@ -2,8 +2,8 @@ import type { AdminSettings, WeddingEvent } from '../types/wedding';
 
 export const initialAdminSettings: AdminSettings = {
   coupleNames: {
-    bride: 'Mehreen Fatima',
-    groom: 'Zayan Khan',
+    bride: 'Basar Boi',
+    groom: 'Inam-ul-Haq',
   },
   tagline: 'Under the auspices of starlight and celestial blossoms',
   weddingDate: '2026-11-28T18:30:00',
