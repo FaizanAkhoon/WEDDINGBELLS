@@ -1,0 +1,151 @@
+import type { AdminSettings, WeddingEvent } from '../types/wedding';
+
+export const initialAdminSettings: AdminSettings = {
+  coupleNames: {
+    bride: 'Mehreen Fatima',
+    groom: 'Zayan Khan',
+  },
+  tagline: 'Under the auspices of starlight and celestial blossoms',
+  weddingDate: '2026-11-28T18:30:00',
+  weddingDateFormatted: 'Saturday, November 28, 2026',
+  venueName: 'The Royal Pine Resort & Himalayan Pavilion',
+  venueAddress: 'Anantnag Highway, Pahalgam Route, Jammu & Kashmir 192101',
+  destinationCity: 'Anantnag',
+  destinationState: 'Jammu & Kashmir',
+  destinationCountry: 'India',
+  totalInvitedCap: 6,
+  maxMehandiInvited: 4,
+  maxLunchInvited: 6,
+  warmWishesMessage:
+    'In the presence of our beloved elders and with the grace of the Almighty, we warmly request the honour of your presence as two souls unite into a lifelong tapestry of love, warmth, and celestial peace.',
+  familyNames: 'Mr. & Mrs. Tariq Khan and Mr. & Mrs. Irfan Hashmi',
+  contactRsvp: '+91 98765 43210 / celebration@celestialunion.com',
+};
+
+export const weddingEvents: WeddingEvent[] = [
+  {
+    id: 'mehandi',
+    title: 'Mehandi Raat',
+    subTitle: 'The Emerald Starlight & Henna Night',
+    date: 'Thursday, November 26, 2026',
+    time: '06:30 PM Onwards',
+    venue: 'The Moonlit Lotus Courtyard, Lakefront Pavilion',
+    description:
+      'An enchanting evening infused with fragrant henna motifs, live acoustic sitar and sufi ghazals, and glowing water lanterns along the crystal promenade.',
+    dressCode: 'Emerald Teal, Mint Velvet & Antique Gold',
+    colorPalette: [
+      { name: 'Mint Shimmer', hex: '#5eead4' },
+      { name: 'Emerald Velvet', hex: '#0f766e' },
+      { name: 'Antique Gold', hex: '#f5d06b' },
+      { name: 'Midnight Navy', hex: '#0e1e2d' },
+    ],
+    highlights: [
+      'Master Henna Calligraphy Artists',
+      'Floating Lotus Lamp Lighting',
+      'Live Sufi Melodies & Sitar Duet',
+      'Kashmiri Chai & Artisan Sweets',
+    ],
+    icon: 'Sparkles',
+    bgImage: '/assets/night-lanterns.jpg',
+  },
+  {
+    id: 'haldi',
+    title: 'Haldi & Phoolon Ki Holi',
+    subTitle: 'The Golden Blossom & Turmeric Ritual',
+    date: 'Friday, November 27, 2026',
+    time: '10:30 AM – 01:30 PM',
+    venue: 'The Sunlit Marble Terrace & Fountain Gardens',
+    description:
+      'A radiant morning bathed in sunlight, marigold flower showers, auspicious turmeric pastes, and refreshing citrus coolers overlooking the azure lake.',
+    dressCode: 'Sunshine Yellow, Pastel Ochre & Pearlescent Ivory',
+    colorPalette: [
+      { name: 'Radiant Marigold', hex: '#edd219' },
+      { name: 'Pastel Lemon', hex: '#fefbc2' },
+      { name: 'Pure Silk White', hex: '#ffffff' },
+      { name: 'Warm Terracotta', hex: '#c99924' },
+    ],
+    highlights: [
+      'Organic Rose Petal & Turmeric Shower',
+      'Live Dhol & Rajasthani Folk Beats',
+      'Gourmet Street Delicacies & Kulfi Bar',
+      'Bespoke Floral Jewellery Station',
+    ],
+    icon: 'Sun',
+    bgImage: '/assets/destination-palace.jpg',
+  },
+  {
+    id: 'sangeet',
+    title: 'The Sangeet Soiree',
+    subTitle: 'The Celestial Starlight Symphony',
+    date: 'Friday, November 27, 2026',
+    time: '07:30 PM Till Midnight',
+    venue: 'The Grand Amber Glass Ballroom & Amphitheatre',
+    description:
+      'A starlit night of family choreography, high-energy musical celebrations, dazzling fireworks across the water, and an exquisite world-cuisine buffet.',
+    dressCode: 'Indo-Western Glitz, Royal Sapphire & Liquid Gold',
+    colorPalette: [
+      { name: 'Liquid Gold', hex: '#f5d06b' },
+      { name: 'Celestial Cyan', hex: '#2dd4bf' },
+      { name: 'Deep Indigo', hex: '#060e18' },
+      { name: 'Champagne Shimmer', hex: '#fdf0c5' },
+    ],
+    highlights: [
+      'Bride & Groom Grand Entrance Show',
+      'Live Symphony Orchestra & Celebrity DJ',
+      'Lakefront Fireworks Extravaganza',
+      'Midnight Dessert Degustation',
+    ],
+    icon: 'Music',
+    bgImage: '/assets/twilight-citadel.jpg',
+  },
+  {
+    id: 'wedding',
+    title: 'The Auspicious Wedding Union',
+    subTitle: 'The Twilight Vows & Sacred Nikah / Ceremony',
+    date: 'Saturday, November 28, 2026',
+    time: '05:30 PM (Sunset Hour)',
+    venue: 'The Royal Gazebo of Horizons, Water Pavilion',
+    description:
+      'Witness the sacred union beneath the golden art-nouveau dome as the sun kisses the horizon, surrounded by crystal waters and celestial blessings.',
+    dressCode: 'Regal Sherwanis, Heirloom Lehengas & Pastel Cyan-Gold',
+    colorPalette: [
+      { name: 'Royal Gold', hex: '#d4b30e' },
+      { name: 'Mint Silk', hex: '#ccfbf1' },
+      { name: 'Ivory Pearl', hex: '#fffdf5' },
+      { name: 'Antique Bronze', hex: '#724f11' },
+    ],
+    highlights: [
+      'Imperial Royal Baraat by Lake Boats',
+      'Sunset Sacred Vows & Garland Exchange',
+      'Harp & Shehnai Harmony Ensemble',
+      'Grand Blessing of Elders',
+    ],
+    icon: 'Heart',
+    bgImage: '/assets/destination-palace.jpg',
+  },
+  {
+    id: 'lunch',
+    title: 'The Grand Royal Lunch & Reception',
+    subTitle: 'The Feast of Horizons & Dawat-e-Walima',
+    date: 'Sunday, November 29, 2026',
+    time: '12:30 PM – 04:30 PM',
+    venue: 'The Grand Imperial Banquet Hall & Lakeside Lawn',
+    description:
+      'An afternoon of royal culinary indulgence featuring slow-cooked Awadhi delicacies, Mewari treasures, family portraits, and heartfelt farewell toasts.',
+    dressCode: 'Elegance in Pastels, Lavender Silk & Crisp Linens',
+    colorPalette: [
+      { name: 'Pastel Aqua', hex: '#99f6e4' },
+      { name: 'Soft Cream', hex: '#fef9e7' },
+      { name: 'Rose Gold', hex: '#fda4af' },
+      { name: 'Deep Emerald', hex: '#115e59' },
+    ],
+    highlights: [
+      'Curated 7-Course Royal Degustation',
+      'Commemorative Guestbook & Photo Studio',
+      'Acoustic Classical Fusion Performance',
+      'Parting Keepsake & Memento Gifting',
+    ],
+    icon: 'Utensils',
+    bgImage: '/assets/bg-mint-lilies.jpg',
+  },
+];
